@@ -34,7 +34,6 @@ public class LoginModel {
         ResultSet rs = null;
 
         String sql = "SELECT * FROM login WHERE username = ? and password = ? and division = ?";
-
         try {
             pr = this.connection.prepareStatement(sql);
             pr.setString(1, user);
